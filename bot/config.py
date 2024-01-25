@@ -16,13 +16,13 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
-    DEV = 5467555331
-    OWNER = config("OWNER")
-    ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By AnshuSharma (https://github.com/Anshusharma75/TG-videoCompress)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
-    THUMB = config("THUMBNAIL")
+    APP_ID = config("APP_ID", "24781263")
+    API_HASH = config("API_HASH", "41abdfd49a74666e24113d071db34c9d")
+    BOT_TOKEN = config("BOT_TOKEN", "6820069988:AAH6x9DbjjU5TikcgyxMlhme8ehc-EVU89I")
+    DEV = 1358747363
+    OWNER = config("OWNER", "1358747363")
+    ffmpegcode = ["-preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By AnshuSharma (https://github.com/Anshusharma75/TG-videoCompress)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
+    THUMB = config("THUMBNAIL", "https://te.legra.ph/file/b5db88346a40244a53e06.jpg")
 except Exception as e:
     print("Environment vars Missing")
     print("something went wrong")
